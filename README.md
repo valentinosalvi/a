@@ -63,7 +63,54 @@ A continuación, se detallará la documentación del proyecto.
 - PageRegistroProfesor -> Page que permite a un profesor registrasrse (utilizando fetch).
 - PrincipalAlumno-> Page que muestra todas las clases a un alumno.
 - PrincipalProfesor-> Page que muestra las clases a un profesor (solo las que este crea).
-
+#### BD: MongoDB
+- Documento clase:  
+```
+{  
+    _id: <ObjectId>,  
+    inscriptos: Array[<ObjectId>],  
+    comentario: Array,  
+    materia: String,  
+    tipo: String,  
+    duracion: String,  
+    freceuncia: String,  
+    costo: Double,  
+    calificacion: Double,  
+    estado: String,  
+    idProfesor: <ObjectId>  
+}
+```
+- Documento alumno:
+```
+{
+	_id: <ObjectId>,
+	materias: Array[<ObjectId>],
+	nombre: String,
+	apellido: String,
+	email: String,
+	contraseña: String,
+	fechaNacimiento: String,
+	estudiosCursados: String,
+	preguntaVerificacion: String,
+	telefonoCOntacto: Number,
+	mensajeAlProfesor: String,
+	__v: Number
+}
+ ``` 
+- Documento profesor:
+```
+{
+	_id: <ObjectId>,
+	nombre: String,
+	apellido: String,
+	email: String,
+	contraseña: String,
+	titulo: String,
+	experiencia: String,
+	__v: Number
+}
+ ``` 
+ #### Diagrama de relaciones
 ## Equipo de Trabajo
 Proyecto desarrollado por estudiantes de UADE para la materia Aplicaciones Interactivas:
 - Facundo Milher
