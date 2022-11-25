@@ -12,11 +12,11 @@ VAQU es una aplicación web desarrollada con el objetivo de gestionar clases par
 1. Sistema operativo: Windows
 2. Frameworks:
 * [Express](https://expressjs.com/es/)
-* [Express](https://expressjs.com/es/)
+* [React](https://es.reactjs.org/)
 3. Conocimientos:
 * [JavaScript](https://www.javascript.com/)
 * HTML
-* [Express](https://expressjs.com/es/)
+* [React](https://es.reactjs.org/)
 ## Instalación
 A continuación se detallara una guía de los comandos que se deben usar para comenzar la ejecución.
 - En el back:
@@ -33,7 +33,37 @@ $ npm install
 $ npm run
 ```
 ## Documentación
-Contenido a desarrollar...
+A continuación, se detallará la documentación del proyecto. 
+#### Función de cada file
+1. Componentes:
+- Card-> Contiene una card con la descripción de una clase que visualizará un alumno.
+- CardContratacion-> Contiene una card que permite a un alumno inscribirse a una clase.
+- CardExtendida-> Contiene una card con la descripción (extendida) de una clase que visualizará un alumno.
+- CardExtendidaProfesor-> Contiene una card con la descripción (extendida) de una clase que visualizará un profesor.
+- Comentarios-> Contiene el formato de los comentarios.
+- Filtro-> Contiene los filtros de las clases y la lógica de los mismos.
+- Iniciosesion-> Contiene una card que permite a un alumno iniciar sesión.
+- IniciosesionProfesor-> Contiene una card que permite a un alumno iniciar sesión.
+- NuevaClase->  Contiene una card que permite a un profesor crear una clase.
+- OlvideContraseña-> Contiene una card que permite cambiar la contraseña a cualquier usuario.
+2. Context:
+- UserContext-> File para tomar el contexto y poder usarlo posteriormente.
+3. Controller:
+- Peticiones a las apis mediante el uso de fetch.
+4. Pages:
+- Alumnoprofe -> page que permite al usuario elegir si ingresa como alumno o como profesor, registrarse como alumno o como profesor y cambiar la contraseña.
+- PageAgregarClase-> Page que permite al profesor crear nueva clase.
+- PageClase-> Page de una clase en especifico que selecciona un usuario.
+- PageHome-> Home Page de la aplicación.
+- PageiniciosesionAlumno-> Page para que inicie sesión un alumno.
+- PageiniciosesionProfesor-> Page para que inicie sesión un profesor.
+- PageMisClases-> Page para que un alumno visualice solo las clases que reservó.
+- PageOlvideContraseña-> Page que permite a un alumno cambiar contraseña.
+- PageRegistroAlumno -> Page que permite a un alumno registrarse (uilizando fetch).
+- PageRegistroProfesor -> Page que permite a un profesor registrasrse (utilizando fetch).
+- PrincipalAlumno-> Page que muestra todas las clases a un alumno.
+- PrincipalProfesor-> Page que muestra las clases a un profesor (solo las que este crea).
+
 ## Equipo de Trabajo
 Proyecto desarrollado por estudiantes de UADE para la materia Aplicaciones Interactivas:
 - Facundo Milher
