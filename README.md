@@ -6,7 +6,7 @@
 4. [Documentación](#doc)
 5. [Equipo de Trabajo](#team)
 6. [Conclusión](#end)
-## VAQU - Introducción
+## Introducción
 VAQU es una aplicación web desarrollada con el objetivo de gestionar clases particulares. Los alumnos podrán reservar clases y los profesores subir, editar y eliminar sus clases.
 ## Pre-requisitos
 1. Sistema operativo: Windows
@@ -19,12 +19,12 @@ VAQU es una aplicación web desarrollada con el objetivo de gestionar clases par
 * [React](https://es.reactjs.org/)
 ## Instalación
 A continuación se detallara una guía de los comandos que se deben usar para comenzar la ejecución.
-- En el back:
+- En el back-end (res-api):
 ```console
 $ npm install
 $ npm run dev
 ```
-- En el front:
+- En el front-end (tpo):
 ```console
 $ npm install -g webpack
 $ npm install -g react
@@ -110,7 +110,15 @@ A continuación, se detallará la documentación del proyecto.
 	__v: Number
 }
  ``` 
- #### Diagrama de relaciones
+#### Diagrama de relaciones
+```mermaid
+graph TD;
+alumno-->clase;
+clase-->alumno;
+clase-->profesor;
+``` 
+#### Documemtación APIS
+Para ver la documentacion de las apis, se usó la libreria Swagger. Una vez ejecutado el back-end, en el navegador ingresar http://localhost:4000/docs. Usuario: admin Contraseña: Admin
 ## Equipo de Trabajo
 Proyecto desarrollado por estudiantes de UADE para la materia Aplicaciones Interactivas:
 - Facundo Milher
