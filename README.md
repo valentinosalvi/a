@@ -1,9 +1,9 @@
 ## VAQU 
 # Tabla de Contenidos
 1. [Introducción](#Introducción)
-2. [Pre-requisitos](#prerequisitos)
+2. [Pre-requisitos](#Pre-requisitos)
 3. [Instalación](#Instalación)
-4. [Documentación](#doc)
+4. [Documentación](#Documentación)
 5. [Equipo de Trabajo](#team)
 6. [Conclusión](#end)
 ## Introducción
