@@ -71,7 +71,11 @@ A continuación, se detallará la documentación del proyecto.
 {  
     _id: <ObjectId>,  
     inscriptos: Array[<ObjectId>],  
-    comentario: Array,  
+    comentario: Array[	{
+				idAlumno: <ObjectId>,
+				cometario: String,
+				nombreAlumno: String
+			}],  
     materia: String,  
     tipo: String,  
     duracion: String,  
