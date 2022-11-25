@@ -13,10 +13,12 @@ VAQU es una aplicación web desarrollada con el objetivo de gestionar clases par
 2. Frameworks:
 * [Express](https://expressjs.com/es/)
 * [React](https://es.reactjs.org/)
+* [Node.js](https://nodejs.org/en/)
 3. Conocimientos:
 * [JavaScript](https://www.javascript.com/)
 * HTML
 * [React](https://es.reactjs.org/)
+* [Node.js](https://nodejs.org/en/)
 ## Instalación
 A continuación se detallara una guía de los comandos que se deben usar para comenzar la ejecución.
 - En el back-end (res-api):
@@ -117,8 +119,8 @@ alumno-->clase;
 clase-->alumno;
 clase-->profesor;
 ``` 
-#### Documemtación APIS
-Para ver la documentacion de las apis, se usó la libreria Swagger. Una vez ejecutado el back-end, en el navegador ingresar http://localhost:4000/docs. Usuario: admin Contraseña: Admin
+#### Documemtación microservicios.
+Para ver la documentacion de los microservicios, se usó la libreria Swagger. Una vez ejecutado el back-end, en el navegador ingresar http://localhost:4000/docs.   Usuario: admin Contraseña: admin
 ## Equipo
 Proyecto desarrollado por estudiantes de UADE para la materia Aplicaciones Interactivas:
 - Facundo Milher
