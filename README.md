@@ -4,7 +4,8 @@
 2. [Pre-requisitos](#Pre-requisitos)
 3. [Instalación](#Instalación)
 4. [Documentación](#Documentación)
-5. [Equipo](#Equipo)
+5. [Credenciales](#Credenciales)
+6. [Equipo](#Equipo)
 
 ## Introducción
 VAQU es una aplicación web desarrollada con el objetivo de gestionar clases particulares. Los alumnos podrán reservar clases y los profesores subir, editar y eliminar sus clases.
@@ -134,6 +135,14 @@ clase-->profesor;
 ``` 
 #### Documemtación microservicios.
 Para ver la documentacion de los microservicios, se usó la libreria Swagger. Una vez ejecutado el back-end, en el navegador ingresar http://localhost:4000/docs.   Usuario: admin Contraseña: admin
+
+## Credenciales
+### Credenciales de alumno
+- mail: facu@gmail.com, contraseña: fer, pregunta de verificación: gol
+- mail: salvivichich@gmail.com, contraseña: valen, pregunta de verificación: gol
+### Credenciales de alumno
+- mail: caro@gmail.com, contraseña: facu, pregunta de verificación: corsa
+- mail: paula@gmail.com, contraseña: paula, pregunta de verificación: c3
 ## Equipo
 Proyecto desarrollado por estudiantes de UADE para la materia Aplicaciones Interactivas:
 - Facundo Milher
