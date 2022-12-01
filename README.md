@@ -24,6 +24,7 @@ A continuación se detallara una guía de los comandos que se deben usar para co
 - En el back-end (res-api):
 ```console
 $ npm install
+$ npm install nodemailer
 $ npm run dev
 ```
 - En el front-end (tpo):
@@ -65,23 +66,31 @@ A continuación, se detallará la documentación del proyecto.
 - PageRegistroProfesor -> Page que permite a un profesor registrasrse (utilizando fetch).
 - PrincipalAlumno-> Page que muestra todas las clases a un alumno.
 - PrincipalProfesor-> Page que muestra las clases a un profesor (solo las que este crea).
+- PagePendienteProfesor-> Page que muestra las clases que tienen un estado pendiente (son las que tiene que aceptar o cancelar un profesor).
+- PagePendienteAlumno-> Page que muestra las clases que tienen un estado pendiente (son las que el profesor aún no acepto la inscripción).
 #### BD: MongoDB
 - Documento clase:  
 ```
 {  
-    _id: <ObjectId>,  
+    _id: <ObjectId>,
+    calificacion: Array[{
+				idAlumno: <ObjectId>,
+				calificacion: Number,
+				nombreAlumno: String
+			}], 
     inscriptos: Array[<ObjectId>],  
     comentario: Array[	{
 				idAlumno: <ObjectId>,
 				cometario: String,
-				nombreAlumno: String
+				nombreAlumno: String,
+				idComentario: <ObjectId>,
+				email: String
 			}],  
     materia: String,  
     tipo: String,  
     duracion: String,  
     freceuncia: String,  
-    costo: Double,  
-    calificacion: Double,  
+    costo: Number,    
     estado: String,  
     idProfesor: <ObjectId>  
 }
